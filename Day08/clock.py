@@ -1,9 +1,9 @@
 from tkinter import *
-from tkinter.ttk import  *
+from tkinter.ttk import *
 from time import strftime
 
 root = Tk()
-root.title("Clock")
+root.title = "Clock"
 
 def time():
     string = strftime("%H:%M:%S %p")
@@ -11,7 +11,7 @@ def time():
     lbl.after(1000,time)
     pass
 
-lbl = Label(root, font=("Arial", 40, "bold"), background="white", foreground="black")
+lbl=Label(root, font=("Arial", 40), background="white", foreground="black")
 lbl.pack(anchor="center")
 
 time()
